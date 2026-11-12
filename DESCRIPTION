@@ -1,0 +1,26 @@
+Package: oissyntheticdata
+Type: Package
+Title: Aggregate Profiles and Synthetic Files for Confidential Data
+Version: 3.0.0
+Date: 2026-11-12
+Authors@R: c(
+    person("Yohanan", "Ouaknine", email = "yohanan.ouaknine@ois.co.il", role = c("aut", "cre")),
+    person("OIS", role = "cph", comment = "https://ois.co.il"))
+Description: Profiles a folder of 'Excel' and CSV files into aggregate-only
+    'JSON' files (counts, shares and quantiles, with no cell below a minimum
+    count), rebuilds synthetic files with the same names, columns,
+    distributions and working joins from those 'JSON' files, and gives an
+    analysis script a small statistics toolbox. An analysis script can then be
+    written on the synthetic files and run unchanged on the confidential files,
+    in the place where they are kept. The tool is the single file 'gov_one.R',
+    which uses base R only and works offline. The package ships that file
+    unchanged and can copy it out, to be carried into a place where no package
+    can be installed. The 'JSON' files are interchangeable with those written
+    by the 'Python' package of the same name.
+License: MIT + file LICENSE
+URL: https://github.com/yohananouaknine/oissyntheticdata-r
+BugReports: https://github.com/yohananouaknine/oissyntheticdata-r/issues
+Depends: R (>= 4.2.0)
+Encoding: UTF-8
+Language: en-GB
+NeedsCompilation: no
